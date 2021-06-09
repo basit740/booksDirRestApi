@@ -1,0 +1,20 @@
+{
+  "name": "books_directory_express_js",
+  "version": "1.0.0",
+  "description": "An App for Books Directory",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "author": "Basit Ali",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "exprss": "0.0.1-security",
+    "mongodb": "^3.6.9",
+    "mongoose": "^5.12.13",
+    "nodemon": "^2.0.7"
+  }
+}
