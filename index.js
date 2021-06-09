@@ -22,7 +22,7 @@ app.get('/home',(req,res)=>{
 
 app.use(express.json());
 //database connection here
-const connectionString= 'your database connection string here';
+const connectionString= 'mongodb+srv://basit740:admin1122@cluster0.ljxbi.mongodb.net/booksDirectory?retryWrites=true&w=majority';
 mongoose.connect(connectionString, {useNewUrlParser:true, useCreateIndex:true});
 const connection = mongoose.connection;
 connection.once('open',()=>{
