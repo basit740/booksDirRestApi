@@ -2,7 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const mongoose= require('mongoose');
 const app=express();
-const PORT=5000;
+const port=process.env.PORT || 5000;
 const path=require('path')
 
 app.use(express.static('public'));
@@ -36,7 +36,7 @@ const booksRouter = require('./routes/books');
 
 app.use('/books',booksRouter);
 
-app.listen(PORT,()=>{
+app.listen(port,()=>{
     console.log(`Server is running at port: ${PORT}`);
 });
 
